@@ -1,1 +1,400 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body{
+
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro{
+  height: 40%;
+  width: 100%;
+  margin: auto;
+  background-image: url(assets/Images/motla.jpg);
+  background-position: center;
+  display: table;
+  top:0;
+  background-position: center;
+  background-blend-mode: soft-light;
+  background-size: cover;
+
+}
+
+.intro .inner{
+
+  display: table-cell;
+  vertical-align: middle;
+  width:100%;
+  max-width: none;
+
+}
+.content{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1{
+font-family: 'Raleway', sans-serif;
+color: darkred;
+text-shadow: 0px 0px 300px #000;
+font-size: 500%;
+}
+
+.h3 {
+   color: white;
+}
+
+.lead{
+  color: white;
+}
+.btn{
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  color: #036A81;
+  font-size: 135%;
+  padding: 10px 20px;
+  border: solid #036A81 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.btn:hover{
+  color: #fff;
+  border: solid #fff 3px;
+}
+
+.p{
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+
+.footer-area{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #272727;
+  padding: 20px 0px;
+}
+
+.center{
+  font-family: sans-serif;
+  color: white;
+  text-align: right;
+}
+
+p{
+
+  font-family: sans-serif;
+  color: black;
+}
+
+@media screen and(max-width768px){
+  .content h1{
+      font-size: 250%;
+  }
+  .btn{
+      font-size: 110%;
+      padding: 7px 15px;
+  }
+
+}
+
+//--------- start Service Area -------------//
+
+.single-service{
+	h4{
+		padding:20px 0;
+		@include transition();
+		font-size:17px;
+	}
+	hover{
+		cursor:pointer;
+		h4{
+			color:primary-color;
+		}
+	}
+	.thumb{
+		overflow:hidden;
+		img{
+			width:100%;
+			@include transition();
+		}
+	}
+
+	.hover{
+		.thumb img{
+			transform:scale(1.1) rotate(-2deg);
+		}
+
+	}
+	@media(max-width:960px){
+		text-align:center;
+		margin-bottom:30px;
+	}
+
+}
+
+.service-area .containers{
+  background-image: url(assets/Images/white4.jpg);
+}
+
+//-----Footer----------//
+.footer-social-icons{
+width: 100%;
+height: auto;
+margin: auto;
+}
+
+.footer-social-icons ul{
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
+
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background: #32CD32;
+ }
+
+ .footer-social-icons ul li a{
+   color: #272727;
+   font-size: 25px;
+   display: block;
+ }
+ .footer-social-icons ul li:hover{
+   background: #f00;
+ }
+ .footer-social-icons ul li:hover a{
+  color: #fff;
+}
+.footer-menu{
+width: 100%;
+height: auto;
+margin: auto;
+margin-top: 20px;
+}
+
+.footer-menu ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footer-menu ul li{
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+.footer-menu ul li a{
+  font-family: arial;
+  font-size: 15px;
+  font-size: 600;
+  color: #fff;
+
+}
+.footer-menu ul li a:hover{
+  color: #32CD32;
+}
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #32CD32;
+  padding: 0px;
+}
+
+.footer-bottom p {
+  font-family: arial;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 600;
+}
+
+.footer-bottom p a{
+color: #fff;
+}
+.footer-bottom p a:hover{
+  color: #32CD32;
+}
+
+.footer-social-icon{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  margin-top: 20px;
+  color: #fff;
+  display: inline;
+  }
+  //-------- end footer --------//
+.text-md-center{
+  color: #fff;
+}
+//----------contact------------//
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(assets/Images/adventure.jpg);
+  background-size: cover;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2{
+font-size: 36px;
+font-weight: 500;
+color: #fff;
+}
+
+.contact .content p{
+  font-weight: 300;
+  color: #fff;
+  }
+
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+
+  .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+.container .contactInfo .box .text{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: #fff;
+flex-direction: column;
+font-weight: 300;
+}
+.text p{
+  color: #fff;
+}
+.container .contactInfo .box .text h3{
+ font-weight: 500;
+ color: #00bcd4;
+}
+
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px){
+  .contact{
+    padding: 50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,
+  .contactForm{
+    width: 100%;
+  }
+}
